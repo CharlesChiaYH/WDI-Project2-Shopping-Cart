@@ -113,5 +113,5 @@ app.use(function (err, req, res, next) {
     });
 });
 
-require('./seed/product-seeder.js');
+//require('./seed/product-seeder.js');
 module.exports = app;
