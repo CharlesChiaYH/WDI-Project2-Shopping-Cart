@@ -14,8 +14,9 @@ var session = require('express-session');
 var passport = require ('passport');
 var flash = require('connect-flash');
 var validator = require('express-validator');
-import dotenv from 'dotenv'
-dotenv.load(path: '.env')
+var dotenv = require('dotenv');
+//import dotenv from 'dotenv';//
+dotenv.load({path: '.env'});
 
 //set MongoStore for 'connect-mongo' middleware package//
 //'connect-mongo' is set up after sessions, and sessions//
