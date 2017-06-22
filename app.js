@@ -17,6 +17,7 @@ var validator = require('express-validator');
 var dotenv = require('dotenv');
 //import dotenv from 'dotenv';//
 dotenv.load({path: '.env'});
+require('./seed/product-seeder.js');
 
 //set MongoStore for 'connect-mongo' middleware package//
 //'connect-mongo' is set up after sessions, and sessions//
